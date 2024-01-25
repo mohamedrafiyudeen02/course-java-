@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>aaaaa</title>
+<style>
+.container{
+/* transform: rotatez(20deg); */
+width:400px;
+height:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.a{
+    border: 2px solid black;
+    /* transform: translate3d(10px,40px,2em); */
+    /* transform:perspective(100px)translatez(50px); */
+    /* transform: rotatex(70deg); */
+  
+
+height:200px;
+width:200px;
+transition:all 1s 1s linear;
+}
+.a:hover{
+background-color:green;
+height:300px; 
+width:300px;
+transform:perspective(100px)rotate3d(1,2,3,-40deg); 
+}
+.b{
+    border: 2px solid black;
+width:60px;
+height:20px;
+transition:all 1s 1s linear;
+
+}
+.b:hover{
+    /* transform: scalex(40deg); */
+background-color:yellow;
+border-bottom:5px solid red;
+
+}
+</style></head>
+<body>
+<div class="container">
+<div class="a">romeo</div>
+<div class="b">rowdy</div>
+</div>
+</body>
+</html>

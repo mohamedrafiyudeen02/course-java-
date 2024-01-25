@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Tooltip</title>
+    <style>
+        .tool{
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px solid blue; 
+        }
+        .tool .tooltext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            border-radius: 7px;
+            padding: 5px 0;
+            top:200px ;
+            position: absolute;
+            
+        }
+        .tool:hover .tooltext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tool">
+        hai maan
+        <span class="tooltext">who are you</span>
+    </div>
+</body>
+</html>
