@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <h2>hello</h2>
+    <h2>hal</h2>
+    <h1 class="queen">jdk</h1>
+    <button onclick="displaydat()">show date</button>
+    <p id="demo"></p>
+    <h1 onclick="this.innerHTML='rafi'">Welcome</h1>
+    <!-- name: <input type="text" id="achu" onchange="upCase()"> -->
+    name: <input type="text" id="achu" oninput="upCase()">
+
+
+    <p id="local"></p>
+    <script>
+        document.getElementById("name").innerHTML="hello world";
+        
+        document.getElementsByClassName("queen")[0].innerHTML="jdbc";
+        document.getElementsByTagName("h2")[0].innerHTML="welcome";
+        function displaydat() {
+            document.getElementById("demo").innerHTML=Date();
+        }
+       function cout() {
+        let count=0;
+        for(let i=0;i<=5;i++){
+            count++;   
+        }
+       } 
+       function upCase() {
+        const x=document.getElementById("achu");
+        x.value=x.value.toUpperCase();
+       }
+        // Define an object
+const person = {
+  name: 'Alice',
+  age: 30,
+  city: 'New York'
+};
+
+// Iterate over the properties of the object using for...in loop
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+const numbers = [1, 2, 3, 4, 5];
+
+for (let num of numbers) {
+  console.log(num);
+}
+
+function getdata(x,y,callback) {
+  console.log(x+y+"<br>");
+  callback();
+  
+}
+function showdata() {
+  document.write("Hello world");
+}
+getdata(10,20,showdata);
+function getdate(name){
+
+  alert("hello"+name);
+}
+function showdatas(callback) {
+  let name =prompt("welcome;)what is your name");
+  callback(name);
+}
+showdatas(getdate);
+getdate("rafiyudeen");
+
+
+
+  function greet(name,lastName) {
+    console.log('hello '+name+' '+lastName);
+  }
+  setTimeout(greet,5000,'john','doe');
+
+   {
+    const count=false;
+    let countValue = new Promise(function(resolve, reject) {
+      if (count==true) {
+        resolve('There  is a count value.');
+
+      }else{
+        reject("There is no count value")
+      }
+    });
+    console.log(countValue);
+   }
+
+   {
+    const jsonData='{"name":"John","age":22}';
+
+    const obj=JSON.parse(jsonData);
+    console.log(obj.name);
+    console.log(obj.age);
+    const jsonDataa={"name":"John","age":22};
+
+
+    const obj1=JSON.stringify(jsonDataa);
+    console.log(obj1);
+   }
+   localStorage.setItem("lastName","dinesh");
+   document.getElementById("local").innerHTML=localStorage.getItem("lastName");
+   
+    </script>
+</body>
+</html>

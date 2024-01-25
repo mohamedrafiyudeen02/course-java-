@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sum{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 160px;
+            margin-left: 600px;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body >
+    <div id="sum">
+        <h1 id="num" style="margin-left: 70px;">0</h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+    </div>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: brown; height: 300px; width: 300px;">Click me</div>
+    <p> this is p element</p>
+    <p> this is p element</p>
+    <button onclick="myFun()">Try it</button>
+    <p id="hello"></p>
+    <p id="transport"></p>
+    <p id="transports"></p>
+    <script>
+        function myFun() {
+            // alert("I am alert box!");
+            // window.alert("i am alert!")
+            let com=window.prompt("help");
+            if (com=="") {
+                Text="please enter your quary"
+            }
+            else{
+                Text="thank you"+com;
+            }
+            document.getElementById("hello").innerHTML=Text;
+        }
+        document.querySelector("p").style.backgroundColor="blue";
+        document.querySelectorAll("p")[1].style.background="yellow";
+        function increment() {
+            var v = +document.getElementById("num").innerHTML;
+            document.getElementById("num").innerHTML = v + 1;
+        }
+
+        function decrement() {
+            var v = +document.getElementById("num").innerHTML;
+            document.getElementById("num").innerHTML = v - 1;
+        }
+        function mDown(obj) {
+            obj.style.backgroundColor="#1ec5e5";
+            obj.innerHTML="Release Me"
+        }
+        function mUp(obj) {
+            obj.style.backgroundColor="#D94A38";
+            obj.innerHTML="Thanks  You";
+        }
+       var a= function ( num1 , num2) {
+            let add =(num1 + num2);
+            return(add);
+        }
+        document.write("<br>");
+        document.write(a(20,22));
+        function add(num3 ,num4) {
+            let a=num3+num4;
+            return(a);
+        }
+        document.write("<br>");
+        document.write(add(10,10));
+        var product=(function sum(num1,num2) {
+            result=num1*num2;
+            return result;
+        })(11,11);
+        document.write("<br>");
+        document.write(product);
+        document.write("<br>");
+
+        let name=(num5 ,num2)=>{
+            add=num5+num2;
+            return(add);
+        }
+        document.write(name(1,4));
+        document.write("<br>");
+        let myFunction = (a, b) => {return a*b};
+            document.write(myFunction(9,9)); 
+        class car{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+        const car1=new car("Bugatti",2020);
+        const car2 = new car("Ferarri",2022);
+        document.getElementById("transport").innerHTML=car1.name+" -"+car1.year;
+        document.getElementById("transports").innerHTML=car2.name+" -"+car2.year;
+    </script>
+   
+</body>
+</html>

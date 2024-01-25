@@ -1,0 +1,11 @@
+frontend
+---------:
+js, resctjs ,html,css,bootstarp
+
+          web page 2 type
+   *-static web page
+   *-dynamic web page
+   index is 1st page of project rule:
+   indtex.html
+   
+   

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<title> calculator</title>
+<style>    
+    #all{
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: blue;
+        margin: auto;
+        margin-top: 10px;
+        width:300px;
+        display: grid;
+        grid-template:100px,600px/100px,100px,100px,100px ;
+        grid-template-areas: 
+        'header header header header'
+        ' a b c d';
+       
+    }
+    .item1{
+       margin: 10px;
+        grid-area: header;   
+
+    }
+    .item2{
+        grid-area: a;
+
+    }
+    .item3{
+        grid-area: b;
+    }
+    .item4{
+        grid-area: c;
+    }
+    .item5{
+        grid-area: d;
+        width: 60px;
+        
+    }
+
+
+    .item{
+      display: grid;
+      
+      
+        
+    }
+    button{
+        margin: 4px;
+        width: 60px;
+        border-radius: 10px;
+        b
+         
+    }
+    .y,.item5>button{
+        background-color: yellow;
+    }
+   
+    
+</style>
+</head>
+<body>
+    <div style="border: 2px solid black; text-align: center; width:40%; margin: auto; height:70px; background-color: yellow;"><h1>calculator</h1></div>
+<div id="all">
+    <div class="item item1">
+         <input type="text" style="text-align: end ;background-color: green;">
+    </div>
+    <div class="item item2">
+        <button class="y">(</button> 
+        <button>7</button>
+        <button>4</button>
+        <button>1</button>
+        <button style="background-color: brown;">delete</button> 
+    </div>
+    <div class="item item3">
+        <button class="y">)</button> 
+        <button>8</button>
+        <button>5</button>
+        <button>2</button>
+        <button>0</button>
+    </div>
+    <div class="item item4">
+        <button class="y">%</button> 
+        <button>9</button>
+        <button>6</button>
+        <button>3</button>
+        <button style="background-color: skyblue;">=</button>
+    </div>
+    <div class="item item5">
+        <button>/</button> 
+        <button>X</button>
+        <button>-</button>
+        <button style="height: 70px;">+</button>
+        
+    </div>
+
+</div>
+
+</body>
+</html>

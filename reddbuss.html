@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>BOOKING now</title>
+        <style>
+            #mainheader{
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                z-index: 12;
+                background-color: aliceblue;
+            }
+            #top{
+                
+                height: 100px;
+                display: flex;
+            }
+            .logo{
+                border-right: 1px solid black;
+            }
+            #top>div{
+                /* border: 1px solid black; */
+                width: 40%;
+            }
+            button{
+                margin: 2px;
+                border: none;
+                width: 150px;
+                height: 90px;
+            }
+            .acc>button{
+                margin-left:170px;
+            }
+            select{
+                border:none;
+            }
+            button:hover{
+                color: red;
+                border-radius: 50%;
+                
+            }
+            #login{
+                margin-top: 100px;
+                border: 2px solid black;
+                text-align: center;
+                
+                height: 500px;
+                background-image: url("imgs/HeroImage.png");
+                background-size:cover;
+            }
+            .log{
+                background-color: aliceblue;
+                margin: auto;
+                width: 900px;
+                height: 150px;
+                border: 2px solid black;
+                border-radius: 50px;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(9,100px),300PX ;
+                grid-template-rows: repeat(4,50px) ;
+            }
+            .from{
+                /* border: 2px solid black; */
+                grid-row:1/5;
+                grid-column: 1/4;
+            }
+            .to{
+                /* border: 2px solid black; */
+                margin-left: 50px;
+                grid-row:1/5;
+                grid-column: 4/7;
+            }
+            .t{
+                /* border: 2px solid black; */
+                grid-row:1/5;
+                grid-column: 7/10;
+            }
+            .d{
+                border: 1px solid black;
+                width: 53px;
+                height: 53px;
+                border-radius: 50%;
+                grid-area: 2/4/4/5;
+                z-index: 1;
+            }
+            .from,.to,.t{
+                margin-top:50px ;
+            }
+            .type{
+                display: flex;
+            }
+           #offer{
+            border-radius: 40px;
+            width: 90%;
+            margin-top: -100px;
+            margin-left: 80px;
+            border: 2px solid black;
+            height: 200px;
+            background-color: aliceblue;
+            box-shadow: 1px 1px 10px black;
+            display: flex;
+           }
+           #offer>div{
+            margin: auto;
+            box-shadow: 1px 1px 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 240px;
+            height: 150px;
+            color: aliceblue;
+            text-align: center;
+            
+            /* justify-self: ; */
+            /* position: absolute; */
+           }
+           .ad{
+            margin-top:100px;
+            margin-left: 15%;
+            border: 2px solid black;
+            box-shadow: 1px 1px 10px yellow;
+            border-radius: 10px;
+            width: 70%;
+            height: 100px;
+            background-image: url(imgs/ad.jpg);
+            background-size: cover;
+           }
+           .add{
+            display: flex;
+            margin-left: 100px;
+            margin-top: 100px;
+            border: 2px solid black;
+            /* background-color: blue; */
+            width: 90%;
+            height: 570px;
+            /* margin: auto; */
+           }
+           .add>div>button{
+            margin-top: 100px;
+            background-color: red;
+            width: 400px;
+            height: 50px;
+            border-radius: 40px;
+            color: aliceblue;
+           }
+           l{
+            color:blue;
+           }
+           .mbapp{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin-top: 10%;
+            margin-left: 10%;
+            border-radius: 60px;
+            background-color:brown;
+            border: 2px solid black;
+            width: 80%;
+            /* height: 400px; */
+           }
+           .rating{
+            background-color: aliceblue;
+            border-radius: 50px;
+            margin-left:0px ;
+            width: 500px;
+            height: 350px;
+           }
+            .star{
+                margin-top:60px ;
+                border: 2px solid black;
+                height: 500px;
+                width: 100%;
+                background-image: url(imgs/book.png);
+                background-size: cover;
+            }
+            .country{
+                border: 2px solid black;
+                background-color: brown;
+                border-radius: 10%;
+                height: 300px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .country>div{
+                border: 1px solid black;
+                border-radius:50% ;
+                width: 200px;
+                height: 200px;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="mainheader">
+            <div id="top">
+                <div class="logo">
+                    <img src="imgs/rb.jpg" style="width: 150px; margin-left:200px; color: black;"/>
+                </div>
+                
+                <div class="types">
+                    <button><i class="fa fa-bus"></br>Bus Tickets</i></button>
+                    <button><i class="fa fa-car"></br>Car Tickets</i></button>
+                    <button><i class="fa fa-train"></br>Train Tickets</i></button>
+                </div>
+                
+                <div class="acc">
+                    <button ><i class="fa fa-headphones"></br>Bus Tickets</i></button>
+                    <select>
+                        <option>Account</option>
+                        <option>Cancel Ticket</option>
+                        <option>Change Travel Date</option>
+                        <option>Show  My Ticket</option>
+                        <option>Email/Sms</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <div id="login">
+            <h1 style="color: aliceblue;">India's No. 1 Online Bus Ticket Booking Site</h1>
+            <div class="log">
+               
+            <div class="from">FROM</br>
+                <i class="fa fa-bus" style="font-size:50px ;"><input type="text"/> </i>
+            </div>
+            <div class="to">TO</br> <i class="fa fa-bus" style="font-size:50px ;"><input type="text"/> </i></div>
+            <div class="t" >DATE<br> <i class="fa fa-calendar-check-o" style="font-size:50px ;"><input type="datetime-local"/> </i></div>
+            <div class="d"><button style="width: 50px;height: 50px; border-radius: 50%;"><i class="fa fa-long-arrow-right" ></i></br>
+                <i class="fa fa-long-arrow-left" ></i></button></div>
+        </div>
+        <div><button style="border-radius: 50px;">SEARCH BUSES</button></div>
+        
+        </div>
+        <div id="offer" >
+            <div style="background-image: url(imgs/divali1.jpg); background-size: cover;"><h1>Save up to Rs 250 on bus tickets</h1> </div>
+            <div style="background-image: url(imgs/divali2.jpg); background-size: cover;"><h1>Save up to Rs 300 in AP,TS routes</h1></div>
+            <div style="background-image: url(imgs/divali3.jpg); background-size: cover;"><h1>Save Up to Rs 250 on bus tickets on TSRTC</h1></div>
+            <div style="background-image: url(imgs/divali4.jpg); background-size: cover;"><h1>Save up to Rs 300 on Chartered Bus</h1></div>
+            <div style="background-image: url(imgs/divali5.jpg); background-size: cover;"><h1>Save 25% up to Rs 100 on SBSTC bus tickets.</h1></div>            
+            <!-- <div style="background-image: url(imgs/divali1.jpg); background-size: cover;"><h1>Save up to Rs 250 on bus tickets</h1> </div> -->
+           
+
+        </div>
+        <div class="ad">
+        </div>
+        <div class="add"style="text-align:center;">
+            <div> <img src="imgs/bus1.png" width="900px" style="opacity:0.7 ;"></div>
+            <div>
+                <h1>NOW, GET MORE THAN JUST BUS TICKETS WITH REDBUS!</h1>
+              <p> Rent Cabs, Tempo Travellers & Buses with best drivers</p> 
+            <img src="imgs/car.png" width="100px"> <l>Outstation</l><br>
+            <img src="imgs/train.png" width="100px"><l>Authorised IRCTC Partner</l><br>
+            <img src="imgs/airplane.png" width="100px"><l>Airport Transfers</l><br>
+            <button>Book Cab / Bus Rental</button>
+            </div>
+            
+        </div>
+        <div class="mbapp">
+            <div>
+               <h1 style="margin: 40PX;color: rgb(255, 255, 255);
+               font-size: 2.5rem;
+               line-height: 3rem;"><code>ENJOY THE APP!</code></h1>
+            </div>
+            <div style="display: flex; gap: 2em; margin-left:10px ;">
+                <div class="rating">
+                    <div style="margin: 50px;">
+                        <h1><i class="fa fa-check-circle" style="color: green;"></i> Quick access</h1>
+                        <h1><i class="fa fa-check-circle" style="color: green;"></i> Superior live tracking</h1>
+                    </div>
+                    <div style="display: flex; justify-content:space-evenly;" >
+                        <div >
+                            <h1>4.5<i class="fa fa-star"></i></h1>
+                        <p>50M+ downloads</p>
+                        <p><b>Play Store</b></p>
+                        </div>
+                        <div>
+                            <h1>4.5<i class="fa fa-star"></i></h1>
+                            <p>50M+ downloads</p>
+                            <p><b>Play Store</b></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <img src="imgs/code.png"width="150px" >
+                    <img src="imgs/App.png"width="200px">
+                    <img src="imgs/travell.png" width="257px" >
+                </div>
+            </div>
+        </div>
+        <div class="star">
+        </div>
+        <div class="imageq" style="margin: 100px;">
+            <img src="imgs/redbusarjun.jpg" width="100%" style="border-radius: 100px;" >
+        </div>
+        <div class="country">
+            <div style="background-image:url(imgs/dubai.jpg) ;   background-size:contain;"></div>
+            <div style="background-image: url(imgs/malasiya.jpg); background-size:cover; background-repeat: no-repeat;"></div>
+            <div style="background-image: url(imgs/ind.jpg);background-size: cover;"></div>
+            <div style="background-image: url(imgs/amri.jpg); background-size: cover;"></div>
+            <div style="background-image: url(imgs/africa.jpg); background-size: cover;"></div>
+            <div style="background-image: url(imgs/lanka.jpg); background-size: cover;"></div>
+        </div>
+        
+    </body>    
+</html>
